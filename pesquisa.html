@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Css customizado-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <style>
+      html{
+         overflow-x:hidden;
+
+      }
+    
+    </style>
+
+    <title>Sistema de Cadastro Unico</title>
+  </head>
+  <body >
+    <div id="top" class="row">
+  
+      <div class="col-6">
+        
+        <label class="sr-only" for="inlineFormInputGroup">Busca por nome...</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><img class="icone-busca" src="img/search-solid.svg" alt="" width="10px"></div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Busca pelo nome..." required>
+      </div>
+        
+      </div>
+      <div class="col-3">
+        <a href="#" class="btn btn-warning pull-right h2">Pesquisar</a>
+      </div>
+    </div> <!-- /#top -->
+   
+   
+     <hr />
+     <div id="list" class="row">
+    
+    <div class="table-responsive col-md-12">
+      <table class="table table-striped" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data de inclusão</th>
+            <th class="actions">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>Fulana de tal</td>
+            <td>813300000</td>
+            <td>01/01/2015</td>
+            <td class="actions">
+              <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+              <a class="btn btn-warning btn-xs" href="#">Editar</a>
+              <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>Fulano de tal</td>
+            <td>123456281</td>
+            <td>01/01/2015</td>
+            <td class="actions">
+              <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+              <a class="btn btn-warning btn-xs" href="#">Editar</a>
+              <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td>Jefferson Reis</td>
+            <td>0021232552</td>
+            <td>01/01/2015</td>
+            <td class="actions">
+              <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+              <a class="btn btn-warning btn-xs" href="#">Editar</a>
+              <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>1004</td>
+            <td>Carlos Oliveira Santos</td>
+            <td>00220021</td>
+            <td>01/01/2015</td>
+            <td class="actions">
+              <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+              <a class="btn btn-warning btn-xs" href="#">Editar</a>
+              <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>1005</td>
+            <td>João Paulo Silva</td>
+            <td>81300000</td>
+            <td>01/01/2015</td>
+            <td class="actions">
+              <a class="btn btn-success btn-xs" href="#">Visualizar</a>
+              <a class="btn btn-warning btn-xs" href="#">Editar</a>
+              <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+    
+    </div> <!-- /#list -->
+    <div id="bottom" class="row">
+      <div class="col-md-12">
+        <nav aria-label="Navegação de página exemplo">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div> <!-- /#bottom -->
+   </div> <!-- /#main -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          Deseja realmente excluir este item?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Sim</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
